@@ -1,0 +1,6 @@
+I currently teach international curriculum mathematics (A-Level, AP, IB) as a high school teacher. However, I'm planning to move on from this profession in the future, not because of salary or anything, but because I have other pursuits.
+The thing is, I always write notes for my students. If I stop teaching, wouldn't those notes just go to waste? So, I'm thinking of sharing them here afterward for anyone who might find them useful.
+You can freely use and share any materials I provide on this account, unless they're from other sources (like other teachers, textbooks, or videos). If you do share them, though, it would be great if you could keep it anonymous (i.e., don't mention it's me).
+Now, I know I might make mistakes in these notes, typos and factual errors and all, because I'm not perfect and sometimes I rush when preparing them. So please, whoever uses them, don't blindly trust everything.
+I expect most of the content will be related to math and physics, but there might also be some computer science and economics stuff. The difficulty level will range from high school and university to international exams like A-Level. The language will be mainly English, not because I favor it, but because, well, I teach international curriculum, so how else would I write the notes? （I am not a native English speaker)
+That's all for now. Happy learning!
