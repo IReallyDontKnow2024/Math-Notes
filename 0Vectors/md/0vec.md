@@ -193,7 +193,7 @@ $$
 \end{equation}
 $$
 
-Then, we write[^8]:
+Then, we write:
 
 $$
 \begin{equation}
@@ -205,6 +205,15 @@ $$
 \end{equation}
 $$
 
+Some books prefer:
+
+$$
+\begin{bmatrix}
+        \left|\overrightarrow{A}\right|\cos \theta	\\
+        \left|\overrightarrow{A}\right|\sin \theta
+    \end{bmatrix}
+ $$
+
 Here, let $A_x = |\overrightarrow{A}|\cos \theta, A_y = |\overrightarrow{A}|\sin \theta$. By applying the Pythagorean theorem, we have:
 
 > **Theorem 2.2.1: The Magnitude of Vectors**
@@ -215,7 +224,7 @@ Here, let $A_x = |\overrightarrow{A}|\cos \theta, A_y = |\overrightarrow{A}|\sin
 > 
 > $$\begin{equation}|\overrightarrow{A}| = \sqrt{A_x^2 + A_y^2 + A_z^2}\tag{2.4}\end{equation}$$
 
-A numerical example[^9]:
+A numerical example[^8]:
 
 <div style="text-align: center;">
     <img src="13.png" alt="Numerical Example" style="width: 25%;">
@@ -249,6 +258,7 @@ what we really mean is that $\overrightarrow{A} = 2\overrightarrow{i} + 5\overri
 We finally made it here. The final task is to "translate" things from the previous sections into coordinates.
 
 Suppose we have three vectors:
+
 $$
 \overrightarrow{a} = 
 \begin{pmatrix}
@@ -271,7 +281,9 @@ $$
 $$
 
 - $\overrightarrow{a} = \overrightarrow{b} \Leftrightarrow a_1 = b_1, a_2 = b_2, a_3 = b_3$
-- $-\overrightarrow{a} = -\begin{pmatrix}
+- Negative:
+
+$$-\overrightarrow{a} = -\begin{pmatrix}
     a_1 \\
     a_2 \\
     a_3
@@ -279,14 +291,18 @@ $$
     -a_1 \\
     -a_2 \\
     -a_3
-\end{pmatrix}$
-- $\overrightarrow{a} + \overrightarrow{b} = \begin{pmatrix}
+\end{pmatrix}$$
+
+- Addition:
+
+$$\overrightarrow{a} + \overrightarrow{b} = \begin{pmatrix}
     a_1 + b_1 \\
     a_2 + b_2 \\
     a_3 + b_3
-\end{pmatrix}$
+\end{pmatrix}$$
 
 Let me prove the third one to you:
+
 $$
 \overrightarrow{a} + \overrightarrow{b} = a_1 \overrightarrow{i} + a_2 \overrightarrow{j} + a_3 \overrightarrow{k} + b_1 \overrightarrow{i} + b_2 \overrightarrow{j} + b_3 \overrightarrow{k} \\
 = (a_1 + b_1) \overrightarrow{i} + (a_2 + b_2) \overrightarrow{j} + (a_3 + b_3) \overrightarrow{k} \\
@@ -309,10 +325,12 @@ The proof of other results usually follows the same idea, so I will just list th
 The vector product or the cross product is a little bit more complex:
 
 $$
+\begin{array}{c}
 \overrightarrow{a} \times \overrightarrow{b} = (a_1 \overrightarrow{i} + a_2 \overrightarrow{j} + a_3 \overrightarrow{k}) \times (b_1 \overrightarrow{i} + b_2 \overrightarrow{j} + b_3 \overrightarrow{k}) \\
 = a_1 b_1 \overrightarrow{i} \times \overrightarrow{i} + a_1 b_2 \overrightarrow{i} \times \overrightarrow{j} + a_1 b_3 \overrightarrow{i} \times \overrightarrow{k} \\
 \qquad + a_2 b_1 \overrightarrow{j} \times \overrightarrow{i} + a_2 b_2 \overrightarrow{j} \times \overrightarrow{j} + a_2 b_3 \overrightarrow{j} \times \overrightarrow{k} \\
 \qquad \quad + a_3 b_1 \overrightarrow{k} \times \overrightarrow{i} + a_3 b_2 \overrightarrow{k} \times \overrightarrow{j} + a_3 b_3 \overrightarrow{k} \times \overrightarrow{k}
+\end{array}
 $$
 
 Please note that, by applying the definition 1.4.1 and the Anticommutative law 1.4.2, we have:
@@ -329,6 +347,7 @@ $$
 So continuing our calculation, we will have:
 
 $$
+\begin{array}{c}
 \overrightarrow{a} \times \overrightarrow{b} = a_1 b_2 \overrightarrow{k} - a_1 b_3 \overrightarrow{j} - a_2 b_1 \overrightarrow{k} + a_2 b_3 \overrightarrow{i} + a_3 b_1 \overrightarrow{j} - a_3 b_2 \overrightarrow{i} \\
 = (a_2 b_3 - a_3 b_2) \overrightarrow{i} + (a_3 b_1 - a_1 b_3) \overrightarrow{j} + (a_1 b_2 - a_2 b_1) \overrightarrow{k} \\
 = \begin{pmatrix}
@@ -336,6 +355,7 @@ $$
     a_3 b_1 - a_1 b_3 \\
     a_1 b_2 - a_2 b_1
 \end{pmatrix}
+\end{array}
 $$
 
 It is hard to remember this result, but if you know determinants, then we can actually write it in another way:
@@ -350,3 +370,224 @@ $$
     \end{vmatrix}\tag{2.5}
 \end{equation}
 $$
+
+
+## Triple Product
+
+We have the so-called triple product, which is $\overrightarrow{c} \cdot (\overrightarrow{a} \times \overrightarrow{b})$ or $(\overrightarrow{a} \times \overrightarrow{b}) \cdot \overrightarrow{c}$ (they are the same because the dot product has the commutative law):
+
+> **Definition 2.4.1: Triple Product**
+> 
+> For the value of the triple product, we have:
+> 
+> $$
+> \begin{equation}
+>    \overrightarrow{c} \cdot (\overrightarrow{a} \times \overrightarrow{b}) = |\overrightarrow{c}||(\overrightarrow{a} \times \overrightarrow{b})|\cos \psi\tag{2.6}
+> \end{equation}$$
+> 
+> Here, $\psi$ is the angle between $\overrightarrow{c}$ and $(\overrightarrow{a} \times \overrightarrow{b})$. Or, in coordinates, using the determinant, we have:
+> 
+> $$
+> \begin{equation}
+>    \overrightarrow{c} \cdot (\overrightarrow{a} \times \overrightarrow{b}) =
+>    \begin{vmatrix}
+>        c_1 & c_2 & c_3 \\
+>        a_1 & a_2 & a_3 \\
+>        b_1 & b_2 & b_3
+>    \end{vmatrix}\tag{2.7}
+> \end{equation}$$
+> 
+> The key thing is that there is a geometric meaning to the triple product: its absolute value is the volume of the parallelepiped[^9]:
+> 
+> <div style="text-align: center;">
+>     <img src="15.png" alt="Parallelepiped" style="width: 20%;">
+>     <p style="text-align: center;"><em>Figure 17</em></p>
+> </div>
+> 
+> This is because $|\overrightarrow{c}|\cos \psi$ is actually the height of the parallelepiped, while $|(\overrightarrow{a} \times \overrightarrow{b})|$ is the area of the base of the parallelepiped. Hence, it is obvious to see it.
+
+
+# $\ ^\ast$Epilogue
+
+## Inequalities
+
+Using the dot product (scalar product), we can prove two famous and important inequalities:
+
+> **Theorem 3.1.1: Cauchy-Schwarz Inequalities**
+>
+> $$
+\begin{equation}
+    \sum_{i=1}^{3} x_i y_i \le \sqrt{\sum_{i=1}^{3} x_i^2} \sqrt{\sum_{i=1}^{3} y_i^2} \tag{3.1}
+\end{equation}
+$$
+
+**Proof:**
+Let
+
+$$
+\begin{equation*}
+\overrightarrow{x} = 
+\begin{pmatrix}
+x_1 \\
+x_2 \\ 
+x_3
+\end{pmatrix}\quad \text{and}\quad
+\overrightarrow{y} =
+\begin{pmatrix}
+y_1\\
+y_2 \\
+y_3
+\end{pmatrix}
+\end{equation*}
+$$
+
+We have:
+
+$$
+\cos \theta = \frac{x_1 y_1 + x_2 y_2 + x_3 y_3}{\sqrt{x_1^2 + x_2^2 + x_3^2} \sqrt{y_1^2 + y_2^2 + y_3^2}}
+$$
+
+Clearly, $\cos \theta \le 1$. Hence,
+
+$$
+\frac{x_1 y_1 + x_2 y_2 + x_3 y_3}{\sqrt{x_1^2 + x_2^2 + x_3^2} \sqrt{y_1^2 + y_2^2 + y_3^2}} \le 1
+$$
+
+Which is what we want:
+
+$$
+\sum_{i=1}^{3} x_i y_i \le \sqrt{\sum_{i=1}^{3} x_i^2} \sqrt{\sum_{i=1}^{3} y_i^2}
+$$
+
+Maybe you are more familiar with this inequality when we are in a 2-D plane, but the result and proof are pretty similar. Actually, the generalized version of it should be:
+
+$$
+\begin{equation}
+    \sum_{i=1}^{n} x_i y_i \le \sqrt{\sum_{i=1}^{n} x_i^2} \sqrt{\sum_{i=1}^{n} y_i^2}\tag{3.2}
+\end{equation}
+$$
+
+You can prove it using a similar method here as long as you think or "believe" there is an angle in $n$-dimensional space. Otherwise, you shall use some other method. I put this here because I usually forget this important inequality, but with vectors, it is quite easy to remember, just:
+
+$$
+\begin{equation}
+    \overrightarrow{x} \cdot \overrightarrow{y} \le |\overrightarrow{x}| |\overrightarrow{y}|\tag{3.3}
+\end{equation}
+$$
+
+Another important inequality is:
+
+> **Theorem 3.1.2: Triangle Inequality**
+>
+> $$
+> \begin{equation}
+>    |\overrightarrow{x} + \overrightarrow{y}| \le |\overrightarrow{x}| + |\overrightarrow{y}|\tag{3.4}
+> \end{equation}$$
+
+**Proof:**
+We have:
+
+$$
+\begin{align*}
+    (|\overrightarrow{x} + \overrightarrow{y}|)^2 &= (\overrightarrow{x} + \overrightarrow{y}) \cdot (\overrightarrow{x} + \overrightarrow{y}) \\
+    &= |\overrightarrow{x}|^2 + 2 \overrightarrow{x} \cdot \overrightarrow{y} + |\overrightarrow{y}|^2 \\
+    &\le |\overrightarrow{x}|^2 + 2 |\overrightarrow{x}| |\overrightarrow{y}| + |\overrightarrow{y}|^2 \\
+    &= (|\overrightarrow{x}| + |\overrightarrow{y}|)^2
+\end{align*}
+$$
+
+Hence, we have:
+
+$$
+(|\overrightarrow{x} + \overrightarrow{y}|)^2 \le (|\overrightarrow{x}| + |\overrightarrow{y}|)^2
+$$
+
+Notice that both $|\overrightarrow{x} + \overrightarrow{y}|$ and $|\overrightarrow{x}| + |\overrightarrow{y}|$ are non-negative numbers, and we have a trivial result that if $a^2 \le b^2$ then $a \le b$ provided $a \ge 0, b \ge 0$. So we have:
+
+$$
+|\overrightarrow{x} + \overrightarrow{y}| \le |\overrightarrow{x}| + |\overrightarrow{y}|
+$$
+
+Forget about the proof for a second. Notice that this inequality just says that **the length of one side of a triangle cannot be longer than the sum of the lengths of the other two sides** (See Figure 1). Which you should have learned in your younger age.
+
+## Direction Cosine
+
+Some books might also introduce the concepts of direction angles and direction cosine:
+
+> **Definition 3.2.1: Direction Angles and Direction Cosine**
+>
+> The **direction angles** of a vector $\overrightarrow{a}$ is the angle between $\overrightarrow{a}$ and $\overrightarrow{i}, \overrightarrow{j}, \overrightarrow{k}$, i.e., the angle between the vector and the three positive coordinate axes. **Commonly, they will be denoted by $\alpha$ (between x-axis), $\beta$ (between y-axis), $\gamma$ (between z-axis)**. The **direction cosines** (or directional cosines) of a vector are the cosines of the angles between the vector and the three positive coordinate axes.
+
+Using the dot product, the direction cosines are not hard to calculate. Let
+
+$$
+\overrightarrow{a} =
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix}
+$$
+
+$$
+\begin{align}
+    \cos \alpha = \frac{\overrightarrow{a} \cdot \overrightarrow{i}}{|\overrightarrow{a}||\overrightarrow{i}|} = \frac{x}{\sqrt{x^2 + y^2 + z^2}} \tag{3.5}\\
+    \cos \beta = \frac{\overrightarrow{a} \cdot \overrightarrow{j}}{|\overrightarrow{a}||\overrightarrow{j}|} = \frac{y}{\sqrt{x^2 + y^2 + z^2}} \tag{3.6}\\
+    \cos \gamma = \frac{\overrightarrow{a} \cdot \overrightarrow{k}}{|\overrightarrow{a}||\overrightarrow{k}|} = \frac{z}{\sqrt{x^2 + y^2 + z^2}}\tag{3.7}
+\end{align}
+$$
+
+Two interesting things here, first:
+
+$$
+\begin{equation}
+    {\cos \alpha}^2 + {\cos \beta}^2 + {\cos \gamma}^2 = 1\tag{3.8}
+\end{equation}
+$$
+
+Second, we have said in a previous section that to find a unit vector whose direction is the same as $\overrightarrow{a}$, we just need $\displaystyle \frac{1}{|\overrightarrow{a}|} \overrightarrow{a}$. Here it should be:
+
+$$
+\frac{1}{|\overrightarrow{a}|} \overrightarrow{a} = \frac{1}{\sqrt{x^2 + y^2 + z^2}}
+\begin{pmatrix}
+x \\
+y \\
+z
+\end{pmatrix} = 
+\begin{pmatrix}
+\frac{x}{\sqrt{x^2 + y^2 + z^2}} \\
+\frac{y}{\sqrt{x^2 + y^2 + z^2}} \\
+\frac{z}{\sqrt{x^2 + y^2 + z^2}}
+\end{pmatrix}
+$$
+
+Do you see that? We just found that:
+
+$$
+\begin{equation}
+    \text{The unit vector for } \overrightarrow{a}: \frac{1}{|\overrightarrow{a}|} \overrightarrow{a} =
+    \begin{pmatrix}
+    \cos \alpha \\
+    \cos \beta \\
+    \cos \gamma
+    \end{pmatrix}\tag{3.9}
+\end{equation}
+$$
+
+[^1]: Some books might use the symbol $\|\overrightarrow{OA}\|$ for the magnitude of a vector.
+
+[^2]: The three pictures all come from the book *The Mechanical Universe: Mechanics and Heat* by Steven C. Frautschi, Richard P. Olenick, Tom M. Apostol, and David L. Goodstein.
+
+[^3]: The source of the figure is *Mathematics Application and Interpretation HL 2* by Michael Haese, Mark Humphries, Chris Sangwin, and Ngoc Vo.
+
+[^4]: These three pictures comes from *University Physics with Modern Physics* (14th ed.) by Young and Freedman
+
+[^5]: The source of the first two figures is *The Mechanical Universe: Mechanics and Heat* by Steven C. Frautschi, Richard P. Olenick, Tom M. Apostol, and David L. Goodstein, and the source of the last two figures is *University Physics with Modern Physics* (14th ed.) by Young and Freedman.
+
+[^6]: The source of the two figures is *The Mechanical Universe: Mechanics and Heat* by Steven C. Frautschi, Richard P. Olenick, Tom M. Apostol, and David L. Goodstein.
+
+[^7]: The source of the figure is *University Physics with Modern Physics* (14th ed.) by Young and Freedman.
+
+[^8]: The source of the figure is *Mathematics Application and Interpretation HL 2* by Michael Haese, Mark Humphries, Chris Sangwin, and Ngoc Vo.
+
+[^9]: The source of the figure is 《解析几何（第三版）》by 丘维声.
