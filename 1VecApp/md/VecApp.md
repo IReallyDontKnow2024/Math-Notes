@@ -21,10 +21,12 @@ First, see Figure 1, we know a point $A$ on the line, then we know its direction
 
 From the Figure 3 below, it is not hard to deduce the so-called **vector equation** of a line $L$:
 
+<a id="E:VEL"></a>
+
 $$
 \begin{equation}
 \textbf{Vector Equation: }
-\overrightarrow{r} = \overrightarrow{r_0} + t \overrightarrow{v}
+\overrightarrow{r} = \overrightarrow{r_0} + t \overrightarrow{v}\tag{1.1}
 \end{equation}
 $$
 
@@ -90,6 +92,8 @@ $$
 
 Here we get the so-called **parametric equations of the line $L$** through the point $P_0(x_0, y_0, z_0)$ and parallel to the vector $\overrightarrow{v}$:
 
+<a id="E:PEL"></a>
+
 $$
 \begin{equation}
   \text{Parametric Equations: }
@@ -101,7 +105,7 @@ $$
 \end{equation}
 $$
 
-Another way of describing a line $L$ is to eliminate the parameter $t$ from Equations $(1.2)$. If none of $a$, $b$, or $c$ is $0$, we can solve each of these equations for $t$:
+Another way of describing a line $L$ is to eliminate the parameter $t$ from [Equation 1.2](#E:PEL). If none of $a$, $b$, or $c$ is $0$, we can solve each of these equations for $t$:
 
 $$
 \begin{equation*}
@@ -111,15 +115,19 @@ $$
 
 Here we actually get the so-called **symmetric equations** of $L$:
 
+<a id="E:SEL"></a>
+
 $$
 \begin{equation}
 \text{Symmetric Equations: } \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c}\tag{1.3}
 \end{equation}
 $$
 
-Actually, we "allow" the denominators to be $0$. See Equation $(1.2)$ again, for example, if $a = 0$, it just means that $x = x_0$ all the time or, more geometrically, this means that $L$ lies in the vertical plane $x = x_0$.
+Actually, we "allow" the denominators to be $0$. See [Equation 1.2](#E:PEL) again, for example, if $a = 0$, it just means that $x = x_0$ all the time or, more geometrically, this means that $L$ lies in the vertical plane $x = x_0$.
 
 As you can see, the components of the direction vector of the line $L$ can be seen from the denominator of the symmetric equations. The question is how do we know the direction vector? Sometimes it will be given, but sometimes it won't. In the second case, we can get it from knowing another point on the line, say $P_1(x_1, y_1, z_1)$, and $\overrightarrow{P_0P_1}$ will be the direction vector, so we get:
+
+<a id="E:TPL"></a>
 
 $$
 \begin{equation}
